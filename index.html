@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="description" content="Explore the personal gallery of contemporary artwork by Anzhelika Korneeva.">
+  <title>Anzhelika Korneeva | Contemporary Art</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/lucide.min.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <header class="navigation">
+    <a class="monogram" href="#top" aria-label="Anzhelika Korneeva home">AK<span class="dot"></span></a>
+    <nav aria-label="Main navigation"><a href="#works">Selected works <span>03</span></a><a href="#artist">The artist</a></nav>
+    <a class="nav-note" href="#works">Enter the gallery <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+  </header>
+  <main id="top">
+    <section class="intro" aria-labelledby="artist-name">
+      <div class="hero">
+        <a class="hero-art" href="#works" aria-label="Explore Anzhelika's artwork collection"><img src="assets/gallery-study.jpg" alt="Generated gallery study: a sunlit contemporary gallery with sculptural white walls and orange-and-cobalt abstract canvases" fetchpriority="high"></a>
+        <div class="intro-line"><span>Personal gallery / Contemporary art</span><span>An independent perspective</span></div>
+        <div class="hero-caption"><h1 id="artist-name">Anzhelika<br><span>Korneeva</span></h1><a href="#works" aria-label="Explore the works" title="Explore the works"><i data-lucide="arrow-down-right" aria-hidden="true"></i></a></div>
+      </div>
+      <div class="hero-bottom"><span><span class="eyebrow">In focus / Generated image</span><span id="featured-title">Gallery Study</span></span><a class="featured-switch" href="#works"><span id="featured-count">Selected works / 03</span><i data-lucide="arrow-down" aria-hidden="true"></i></a></div>
+    </section>
+    <section id="works" class="works" aria-labelledby="works-title">
+      <div class="section-heading"><div><span class="eyebrow">01 / The collection</span><h2 id="works-title">Selected works<sup>(03)</sup></h2></div><div class="view-switch" role="group" aria-label="Gallery view"><button id="grid-view" class="active" aria-pressed="true" title="Grid view" aria-label="Grid view"><i data-lucide="layout-grid" aria-hidden="true"></i></button><button id="list-view" aria-pressed="false" title="List view" aria-label="List view"><i data-lucide="rows-2" aria-hidden="true"></i></button></div></div>
+      <div class="artworks">
+        <figure class="artwork first"><button data-art="0" aria-label="View The Offering"><img src="assets/artwork-01.jpg" alt="Expressive figurative composition in golden orange and charcoal" loading="lazy"><span class="open-icon"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></button><figcaption><span>The Offering</span><span class="art-number">01</span></figcaption></figure>
+        <figure class="artwork second"><button data-art="2" aria-label="View Clockwork Citrus"><img src="assets/artwork-03.jpg" alt="An orange sphere merging with intricate blue mechanical forms" loading="lazy"><span class="open-icon"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></button><figcaption><span>Clockwork Citrus</span><span class="art-number">03</span></figcaption></figure>
+        <figure class="artwork panorama"><button data-art="1" aria-label="View The Last Human Supper"><img src="assets/artwork-02.jpg" alt="A panoramic scene of a central human figure dining with robots, overlooking a city skyline" loading="lazy"><span class="open-icon"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></button><figcaption><span>The Last Human Supper</span><span class="art-number">02</span></figcaption></figure>
+      </div>
+    </section>
+    <section id="artist" class="artist" aria-labelledby="about-title"><div><span class="eyebrow">02 / The artist</span><h2 id="about-title">Anzhelika<br>Korneeva<span class="artist-period">.</span></h2></div><div class="artist-copy"><span class="artist-mark" aria-hidden="true">AK</span><p>Color meets<br>the unexpected.</p><p class="secondary">Figurative compositions and imagined worlds. A conversation between vivid color, expressive texture, and unexpected perspectives.</p><a href="#works">Return to the collection <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></section>
+  </main>
+  <footer><span>&copy; <span id="year">2026</span> Anzhelika Korneeva</span><span>Personal gallery</span><a href="#top">Back to top <i data-lucide="arrow-up" aria-hidden="true"></i></a></footer>
+  <dialog id="viewer" aria-label="Artwork viewer"><div class="viewer-top"><span id="viewer-title">The Offering</span><button id="close-viewer" title="Close" aria-label="Close artwork viewer"><i data-lucide="x" aria-hidden="true"></i></button></div><div class="viewer-image"><img id="viewer-img" src="assets/artwork-01.jpg" alt=""></div><div class="viewer-bottom"><span>Anzhelika Korneeva</span><div class="viewer-navigation"><button id="previous" title="Previous artwork" aria-label="Previous artwork"><i data-lucide="arrow-left" aria-hidden="true"></i></button><span id="viewer-count">01 / 03</span><button id="next" title="Next artwork" aria-label="Next artwork"><i data-lucide="arrow-right" aria-hidden="true"></i></button></div></div></dialog>
+</body>
+</html>
