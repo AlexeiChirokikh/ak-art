@@ -101,7 +101,7 @@ body.viewer-open { overflow: hidden; }
 .artist-contact { display: grid; grid-template-columns: minmax(0, 1fr) max-content; align-items: start; gap: 14px 16px; margin-top: 18px; border-top: 1px solid #4e554b; padding-top: 14px; }
 .artist-contact h3 { grid-column: 1 / -1; margin: 0; font-size: 20px; font-weight: 400; }
 .contact-methods { margin: 0; }
-.contact-methods > div { display: grid; gap: 4px; padding: 8px 0; border-bottom: 1px solid #4e554b; font-size: 12px; }
+.contact-methods > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 8px 0; border-bottom: 1px solid #4e554b; font-size: 12px; }
 .contact-methods > div:first-child { padding-top: 0; }
 .contact-methods dt { display: flex; gap: 7px; align-items: center; }
 .contact-methods dt svg { width: 14px; height: 14px; color: var(--accent); }
