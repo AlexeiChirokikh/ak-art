@@ -7,7 +7,7 @@ button { color: inherit; font: inherit; cursor: pointer; }
 a, button { -webkit-tap-highlight-color: transparent; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--accent-ink); outline-offset: 5px; }
 svg { width: 20px; height: 20px; stroke-width: 1.5; flex-shrink: 0; }
-.artist, footer, dialog { --accent-ink: var(--accent); }
+footer, dialog { --accent-ink: var(--accent); }
 svg[class*="lucide-arrow-"] { color: var(--accent-ink); }
 .hero-caption svg, .gallery-cover:hover .cover-arrow svg, .viewer-navigation button:hover svg { color: var(--ink); }
 .navigation { height: 76px; padding: 0 3.5%; display: flex; align-items: center; justify-content: space-between; }
@@ -61,12 +61,13 @@ sup { font: 12px monospace; vertical-align: top; display: inline-block; margin: 
 .artworks.list .artwork:first-child { padding-top: 0; }
 .artworks.list img { max-height: 420px; object-fit: contain; }
 .artworks.list figcaption { border: 0; margin: 0; padding: 0; align-items: center; font-size: 25px; }
-.artist { background: var(--ink); color: var(--paper); padding: 68px 6%; }
-.artist .eyebrow { color: #b6beb1; margin-bottom: 13px; }
+.artist { background: #f1eee8; border-top: 1px solid var(--line); padding: 68px 6%; }
+.artist .eyebrow { margin-bottom: 13px; }
 .artist h2 { font-size: 62px; line-height: 1.04; }
-.artist-period { color: var(--accent); }
-.artist-mark { color: var(--accent); font-size: 17px; font-weight: 700; flex-shrink: 0; }
-.artist-copy a { display: inline-flex; align-items: center; gap: 25px; padding: 10px 0; border-bottom: 1px solid #777; font-size: 12px; }
+.artist-period { color: var(--accent-ink); }
+.artist-mark { color: var(--accent-ink); font-size: 17px; font-weight: 700; flex-shrink: 0; }
+.artist-copy a { display: inline-flex; align-items: center; gap: 25px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+.artist-copy a:hover { border-color: var(--accent-ink); }
 footer { background: var(--ink); color: #b6beb1; padding: 25px 3.5%; border-top: 1px solid #373c34; display: flex; align-items: center; justify-content: space-between; font-size: 11px; }
 footer a { display: flex; gap: 18px; align-items: center; }
 dialog { position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; border: 0; padding: 22px 30px; background: #131513; color: var(--paper); }
@@ -90,27 +91,28 @@ body.viewer-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
 
 .artist-inner { max-width: 1080px; margin-inline: auto; }
-.artist-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding-bottom: 24px; border-bottom: 1px solid #4e554b; }
+.artist-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
 .artist-heading > div { min-width: 0; }
-.artist-profile { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); column-gap: 7%; align-items: start; padding-top: 32px; }
+.artist-profile { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); column-gap: clamp(32px, 7vw, 105px); align-items: start; padding-top: 32px; }
 .artist-sidebar { width: 100%; max-width: 340px; container-type: inline-size; }
 .artist-portrait { display: block; width: 100%; height: auto; }
 .artist-copy { max-width: 62ch; }
-.artist-copy p { color: #e0e4dd; font-size: 16px; line-height: 1.7; margin: 0 0 1em; }
+.artist-copy p { color: #30352f; font-size: 16px; line-height: 1.7; margin: 0 0 1em; }
 
-.artist-contact { display: grid; grid-template-columns: minmax(0, 1fr) max-content; align-items: start; gap: 14px 16px; margin-top: 18px; border-top: 1px solid #4e554b; padding-top: 14px; }
+.artist-contact { display: grid; grid-template-columns: minmax(0, 1fr) max-content; align-items: start; gap: 14px 16px; margin-top: 18px; border-top: 1px solid var(--line); padding-top: 14px; }
 .artist-contact h3 { grid-column: 1 / -1; margin: 0; font-size: 20px; font-weight: 400; }
 .contact-methods { margin: 0; }
-.contact-methods > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 8px 0; border-bottom: 1px solid #4e554b; font-size: 12px; }
+.contact-methods > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
 .contact-methods > div:first-child { padding-top: 0; }
 .contact-methods dt { display: flex; gap: 7px; align-items: center; }
-.contact-methods dt svg { width: 14px; height: 14px; color: var(--accent); }
-.contact-methods dd { margin: 0 0 0 21px; min-width: 0; color: #b6beb1; }
-.contact-methods dd a { overflow-wrap: anywhere; color: var(--paper); text-decoration: underline; text-underline-offset: 3px; }
+.contact-methods dt svg { width: 14px; height: 14px; color: var(--accent-ink); }
+.contact-methods dd { margin: 0 0 0 21px; min-width: 0; }
+.contact-methods dd a { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
+.contact-methods dd a:hover { color: var(--accent-ink); }
 .contact-qr { margin: 0; width: 136px; text-align: center; }
 .contact-qr a { display: inline-block; }
 .contact-qr img { display: block; width: 100%; height: auto; background: #fff; }
-.contact-qr figcaption { color: #b6beb1; font-size: 11px; margin-top: 4px; }
+.contact-qr figcaption { color: var(--muted); font-size: 11px; margin-top: 4px; }
 @container (max-width: 315px) {
   .artist-contact { grid-template-columns: minmax(0, 1fr); }
 }
