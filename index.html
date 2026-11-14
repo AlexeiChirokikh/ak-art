@@ -1,41 +1,118 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fafafa">
-  <meta name="description" content="Explore the personal gallery of contemporary artwork by Anzhelika Korneeva.">
+  <meta name="description" content="Explore six collections of contemporary art by Anzhelika Korneeva.">
   <title>Anzhelika Korneeva | Contemporary Art</title>
   <link rel="stylesheet" href="style.css">
   <script src="assets/lucide.min.js" defer></script>
-  <script src="gallery.js" defer></script>
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body class="homepage">
   <header class="navigation">
-    <a class="monogram" href="#top" aria-label="Anzhelika Korneeva home">AK<span class="dot"></span></a>
-    <nav aria-label="Main navigation"><a href="#works">Selected works <span>03</span></a><a href="#artist">The artist</a></nav>
+    <a class="monogram" href="#top" aria-label="Anzhelika Korneeva homepage">AK<span class="dot"></span></a>
+    <nav aria-label="Main navigation"><a href="#works">Galleries <span>06</span></a><a href="#artist">The artist</a></nav>
     <a class="nav-note" href="#works">Enter the gallery <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
   </header>
   <main id="top">
     <section class="intro" aria-labelledby="artist-name">
       <div class="hero">
-        <a class="hero-art" href="#works" aria-label="Explore Anzhelika's artwork collection"><img src="assets/gallery-study.jpg" alt="Generated gallery study: a sunlit contemporary gallery with sculptural white walls and orange-and-cobalt abstract canvases" fetchpriority="high"></a>
-        <div class="intro-line"><span>Personal gallery / Contemporary art</span><span>An independent perspective</span></div>
+        <a class="hero-art" href="#works" aria-label="Browse Anzhelika Korneeva's galleries"><img src="assets/gallery-wall.jpg" alt="A gallery wall of paintings with four sculptural busts on stands in the foreground" fetchpriority="high"></a>
+        <div class="intro-line"><span>Contemporary art portfolio</span><span>An independent perspective</span></div>
         <div class="hero-caption"><h1 id="artist-name">Anzhelika<br><span>Korneeva</span></h1><a href="#works" aria-label="Explore the works" title="Explore the works"><i data-lucide="arrow-down-right" aria-hidden="true"></i></a></div>
       </div>
-      <div class="hero-bottom"><span><span class="eyebrow">In focus / Generated image</span><span id="featured-title">Gallery Study</span></span><a class="featured-switch" href="#works"><span id="featured-count">Selected works / 03</span><i data-lucide="arrow-down" aria-hidden="true"></i></a></div>
+      <div class="hero-bottom"><span><span class="eyebrow">Featured image</span><span id="featured-title">Gallery View</span></span><a class="featured-switch" href="#works"><span id="featured-count">Galleries / 06</span><i data-lucide="arrow-down" aria-hidden="true"></i></a></div>
     </section>
     <section id="works" class="works" aria-labelledby="works-title">
-      <div class="section-heading"><div><span class="eyebrow">01 / The collection</span><h2 id="works-title">Selected works<sup>(03)</sup></h2></div><div class="view-switch" role="group" aria-label="Gallery view"><button id="grid-view" class="active" aria-pressed="true" title="Grid view" aria-label="Grid view"><i data-lucide="layout-grid" aria-hidden="true"></i></button><button id="list-view" aria-pressed="false" title="List view" aria-label="List view"><i data-lucide="rows-2" aria-hidden="true"></i></button></div></div>
-      <div class="artworks">
-        <figure class="artwork first"><button data-art="0" aria-label="View The Offering"><img src="assets/artwork-01.jpg" alt="Expressive figurative composition in golden orange and charcoal" loading="lazy"><span class="open-icon"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></button><figcaption><span>The Offering</span><span class="art-number">01</span></figcaption></figure>
-        <figure class="artwork second"><button data-art="2" aria-label="View Clockwork Citrus"><img src="assets/artwork-03.jpg" alt="An orange sphere merging with intricate blue mechanical forms" loading="lazy"><span class="open-icon"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></button><figcaption><span>Clockwork Citrus</span><span class="art-number">03</span></figcaption></figure>
-        <figure class="artwork panorama"><button data-art="1" aria-label="View The Last Human Supper"><img src="assets/artwork-02.jpg" alt="A panoramic scene of a central human figure dining with robots, overlooking a city skyline" loading="lazy"><span class="open-icon"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></button><figcaption><span>The Last Human Supper</span><span class="art-number">02</span></figcaption></figure>
+      <div class="section-heading"><div><span class="eyebrow">01 / The collection</span><h2 id="works-title">Galleries<sup>(06)</sup></h2></div></div>
+      <!-- collection-covers:start -->
+      <div class="gallery-directory">
+        <a class="gallery-cover" href="galleries/fading-memory/">
+          <div class="cover-image"><img src="assets/collections/fading-memory/thumb/01.jpg" alt="" loading="lazy" decoding="async"></div>
+          <div class="cover-caption">
+            <div><span class="eyebrow">01 / 6 works</span><h3>Fading Memory</h3></div>
+            <span class="cover-arrow"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a class="gallery-cover" href="galleries/pictures-of-florida/">
+          <div class="cover-image"><img src="assets/collections/pictures-of-florida/thumb/01.jpg" alt="" loading="lazy" decoding="async"></div>
+          <div class="cover-caption">
+            <div><span class="eyebrow">02 / 5 works</span><h3>Pictures of Florida</h3></div>
+            <span class="cover-arrow"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a class="gallery-cover" href="galleries/she/">
+          <div class="cover-image"><img src="assets/collections/she/thumb/01.jpg" alt="" loading="lazy" decoding="async"></div>
+          <div class="cover-caption">
+            <div><span class="eyebrow">03 / 3 works</span><h3>She</h3></div>
+            <span class="cover-arrow"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a class="gallery-cover" href="galleries/the-art-of-appearing/">
+          <div class="cover-image"><img src="assets/collections/the-art-of-appearing/thumb/01.jpg" alt="" loading="lazy" decoding="async"></div>
+          <div class="cover-caption">
+            <div><span class="eyebrow">04 / 3 works</span><h3>The Art of Appearing</h3></div>
+            <span class="cover-arrow"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a class="gallery-cover" href="galleries/the-ruins-of-war/">
+          <div class="cover-image"><img src="assets/collections/the-ruins-of-war/thumb/05.jpg" alt="" loading="lazy" decoding="async"></div>
+          <div class="cover-caption">
+            <div><span class="eyebrow">05 / 6 works</span><h3>The Ruins of War</h3></div>
+            <span class="cover-arrow"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a class="gallery-cover" href="galleries/where-the-color-flows/">
+          <div class="cover-image"><img src="assets/collections/where-the-color-flows/thumb/01.jpg" alt="" loading="lazy" decoding="async"></div>
+          <div class="cover-caption">
+            <div><span class="eyebrow">06 / 11 works</span><h3>Where the Color Flows</h3></div>
+            <span class="cover-arrow"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+      </div>
+      <!-- collection-covers:end -->
+    </section>
+    <section id="artist" class="artist" aria-labelledby="about-title">
+      <div class="artist-inner">
+        <header class="artist-heading">
+          <div>
+            <span class="eyebrow">02 / The artist</span>
+            <h2 id="about-title">Anzhelika Korneeva<span class="artist-period">.</span></h2>
+          </div>
+          <span class="artist-mark" aria-hidden="true">AK</span>
+        </header>
+        <div class="artist-profile">
+          <div class="artist-sidebar">
+            <img class="artist-portrait" src="assets/anzhelika-korneeva-portrait.jpg" alt="Anzhelika Korneeva in a cream beret outdoors" width="914" height="1280" loading="lazy" decoding="async">
+            <section id="contact" class="artist-contact" aria-labelledby="contact-title">
+              <h3 id="contact-title">Contact</h3>
+              <dl class="contact-methods">
+                <div><dt><i data-lucide="mail" aria-hidden="true"></i>Email</dt><dd>Coming soon</dd></div>
+                <div><dt><i data-lucide="message-circle" aria-hidden="true"></i>WhatsApp</dt><dd>Coming soon</dd></div>
+                <div><dt><i data-lucide="send" aria-hidden="true"></i>Telegram</dt><dd>Coming soon</dd></div>
+              </dl>
+              <figure class="contact-qr">
+                <a href="https://anzhelika-korneeva-gallery.alexei-chirokikh.chatgpt.site/#contact" aria-label="Open the artist's contact section">
+                  <img src="assets/contact-qr.svg" width="108" height="108" alt="">
+                </a>
+                <figcaption>Artist contact QR code</figcaption>
+              </figure>
+            </section>
+          </div>
+          <div class="artist-copy">
+            <p>Anzhelika Korneeva was born in Siberia, Russia, where winter temperatures can fall to forty below zero, the taiga stretches to the horizon, and Lake Baikal, the deepest lake on Earth, is known for its clear water.</p>
+            <p>Work brought her to Moscow, where she became a department director at a major energy company and led the introduction of artificial intelligence and robotics at large power plants. Her days were full: time with her son and friends, interviews, conferences, and negotiations.</p>
+            <p>Then she met a man she felt she had known all her life. With each conversation, they felt more certain they had been waiting for each other. They fell in love. He lived in Canada and later in the United States, so she left her career and friends in Moscow to be with him. They settled in Florida.</p>
+            <p>In Florida, the blue lakes, lush greenery, and friendly people made her want to share the warmth she felt in her new home. She had studied drawing years earlier but had set it aside to focus on her career. She returned to art and began making textured, three-dimensional paintings that express her hope for a brighter future.</p>
+            <p>Through her work, Anzhelika hopes to remind viewers that wonderful things can happen and to share a little of the joy that inspired her to paint again.</p>
+            <a href="#works">Browse the galleries <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="artist" class="artist" aria-labelledby="about-title"><div><span class="eyebrow">02 / The artist</span><h2 id="about-title">Anzhelika<br>Korneeva<span class="artist-period">.</span></h2></div><div class="artist-copy"><span class="artist-mark" aria-hidden="true">AK</span><p>Color meets<br>the unexpected.</p><p class="secondary">Figurative compositions and imagined worlds. A conversation between vivid color, expressive texture, and unexpected perspectives.</p><a href="#works">Return to the collection <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></section>
   </main>
   <footer><span>&copy; <span id="year">2026</span> Anzhelika Korneeva</span><span>Personal gallery</span><a href="#top">Back to top <i data-lucide="arrow-up" aria-hidden="true"></i></a></footer>
-  <dialog id="viewer" aria-label="Artwork viewer"><div class="viewer-top"><span id="viewer-title">The Offering</span><button id="close-viewer" title="Close" aria-label="Close artwork viewer"><i data-lucide="x" aria-hidden="true"></i></button></div><div class="viewer-image"><img id="viewer-img" src="assets/artwork-01.jpg" alt=""></div><div class="viewer-bottom"><span>Anzhelika Korneeva</span><div class="viewer-navigation"><button id="previous" title="Previous artwork" aria-label="Previous artwork"><i data-lucide="arrow-left" aria-hidden="true"></i></button><span id="viewer-count">01 / 03</span><button id="next" title="Next artwork" aria-label="Next artwork"><i data-lucide="arrow-right" aria-hidden="true"></i></button></div></div></dialog>
 </body>
 </html>
