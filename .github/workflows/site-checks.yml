@@ -1,0 +1,27 @@
+name: Site checks
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check-site:
+    name: Links and JavaScript syntax
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check local links and assets
+        run: python3 scripts/check_site.py
+      - name: Check JavaScript syntax
+        run: |
+          node --check site.js
+          node --check collection-viewer.js
+          node --check gallery.js
